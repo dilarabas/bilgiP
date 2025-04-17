@@ -15,10 +15,10 @@ bilgiP; farklı kategorilerde testler sunar, zamanlayıcıyla heyecanı artırı
 -  Test bitiminde **performans özeti**
 
 ### 📈 Gösterge Paneli
-- 🕒 Son girilen sınav zamanı
-- ✔️ Doğru sayısı
-- 📉 % Başarı oranı
-- 💡 Test önerileri
+-  Son girilen sınav zamanı
+-  Doğru sayısı
+-  % Başarı oranı
+- Test önerileri
 
 ### 👤 Kullanıcı Profili
 -  Profil bilgilerini **düzenleme** seçeneği
