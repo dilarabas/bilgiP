@@ -1,0 +1,93 @@
+/* Profile.css */
+.profile-container {
+    padding: 20px;
+}
+
+.profile-info {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.view-info p {
+    margin-bottom: 10px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-form .buttons button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-form .buttons button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-form .buttons button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.profile-actions h3,
+.user-stats h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-actions ul,
+.user-stats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-actions li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.profile-actions li a:hover {
+    text-decoration: underline;
+}
+
+.user-stats li {
+    margin-bottom: 5px;
+}

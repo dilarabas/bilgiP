@@ -1,0 +1,48 @@
+.test-card {
+  background-color: #ffffff; /* Beyaz kart arka planı */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #8C1C13;
+  transition: transform 0.2s ease-in-out;
+}
+
+.test-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.test-card h3 {
+  color: #8C1C13; /* Başlık kırmızı */
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.test-card p {
+  color: #A78A7F; /* Durum yazısı yumuşak kahve */
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.take-test-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #8C1C13; /* Buton arka planı kırmızı */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.take-test-button:hover {
+  background-color: #6f1510; /* Daha koyu kırmızı hover */
+  transform: scale(1.03);
+}
+
+.test-card a {
+  text-decoration: none;
+  color: inherit;
+}

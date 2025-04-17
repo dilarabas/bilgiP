@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary: #AC9C8D;
+    --accent: #E7D7C1;
+    --text-dark: #050505; /* Kutu içi metin */
+    --text-light: #ffffff; /* Genel arka plan yazısı */
+    --text-muted: #A78A7F;
+    --card-bg: #ffffff;
+    --border: #8C1C13;
+    --shadow: rgba(247, 244, 244, 0.05);
+    --background: #8C1C13;
+    --button-color: #E7D7C1;
+    --detail-color: #A78A7F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.dashboard-container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 60px 30px;
+    margin-top: 40px; /* 🆕 200px sidebar + 30px boşluk */
+    
+}
+
+/* Header */
+.dashboard-header h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-light);
+}
+
+.dashboard-header .username {
+    color: var(--primary);
+}
+
+.dashboard-header p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Summary Cards */
+.summary-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid var(--border);
+    color: var(--text-dark); /* Kutu içi yazı rengi */
+}
+
+.summary-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.summary-icon {
+    font-size: 42px;
+    flex-shrink: 0;
+    color: var(--primary);
+}
+
+.success {
+    color: #10b981;
+}
+
+.info {
+    color: var(--primary);
+}
+
+.summary-card h4 {
+    margin-bottom: 4px;
+    font-size: 15px;
+    color: var(--detail-color);
+}
+
+.summary-card p {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Sections */
+.dashboard-section {
+    margin-top: 60px;
+}
+
+.dashboard-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+}
+
+.section-icon {
+    color: var(--detail-color);
+    font-size: 20px;
+}
+
+/* Test Lists */
+.test-list {
+    list-style: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    padding: 0;
+    color: var(--text-dark);
+}
+
+.test-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+}
+
+.test-list li:last-child {
+    border-bottom: none;
+}
+
+.test-list li:hover {
+    background-color: #f9fafb;
+}
+
+.test-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.test-date {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.test-score {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.test-link {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.test-link:hover {
+    color: #5a443a;
+}
+
+/* Butonlar */
+button {
+    background-color: var(--button-color);
+    color: var(--text-dark);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #d1c5b5;
+}
+
+/* Yazı Alanları */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-header h2 {
+        font-size: 24px;
+    }
+
+    .summary-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .test-title {
+        font-size: 15px;
+    }
+}

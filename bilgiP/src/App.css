@@ -1,0 +1,127 @@
+.app-container-top {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-nav {
+  background-color: #f8f9fa; /* Açık gri arka plan (isteğe bağlı) */
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee; /* Açık gri border (isteğe bağlı) */
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 20px; /* İçerikle navbar arasında boşluk */
+}
+
+.top-nav .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #343a40; /* Koyu gri logo rengi (isteğe bağlı) */
+  margin-right: 30px;
+}
+
+.top-nav .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .menu li {
+  margin-left: 15px;
+}
+
+.top-nav .menu li:first-child {
+  margin-left: 0;
+}
+
+.top-nav .menu li a {
+  text-decoration: none;
+  color: #495057; /* Açık siyah menü rengi (isteğe bağlı) */
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-nav .menu li a:hover {
+  background-color: #e9ecef; /* Açık gri hover (isteğe bağlı) */
+  color: #6B0F1A; /* Mavi hover rengi (isteğe bağlı, tutarlılık için kaldırılabilir) */
+}
+
+.top-nav .menu li a .icon {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.top-nav .auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* .top-nav .auth-buttons a.nav-button {
+  background-color: #007bff; /* Kaldırıldı, Sidebar.css'te yönetilecek */
+/* color: white; /* Kaldırıldı */
+/* padding: 10px 15px; /* Kaldırıldı */
+/* text-align: center; /* Kaldırıldı */
+/* font-weight: 600; /* Kaldırıldı */
+/* border-radius: 50px; /* Kaldırıldı */
+/* box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3); /* Kaldırıldı */
+/* margin-left: 10px; /* Kaldırıldı */
+/* } */
+
+/* .top-nav .auth-buttons a.nav-button:first-child {
+  margin-left: 20px; /* Kaldırıldı */
+/* } */
+
+/* .top-nav .auth-buttons a.nav-button:hover {
+  background-color: #0056b3; /* Kaldırıldı */
+/* box-shadow: 0 4px 7px rgba(0, 86, 179, 0.3); /* Kaldırıldı */
+/* } */
+
+/* .top-nav .auth-buttons a.nav-button:active {
+  background-color: #003366; /* Kaldırıldı */
+/* box-shadow: 0 1px 3px rgba(0, 51, 102, 0.3); /* Kaldırıldı */
+/* transform: translateY(0); /* Kaldırıldı */
+/* } */
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  padding-top: 20px; /* Navbar'ın altındaki boşluğa göre ayarlanabilir */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-main {
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Eğer sidebar kullanılıyorsa */
+.app-container-top {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0; /* Açık gri sidebar arka planı (isteğe bağlı) */
+}
+
+.content-area {
+  padding: 20px;
+  margin-left: 20px; /* Sidebar genişliğine göre ayarlanabilir */
+  flex: 1;
+  box-sizing: border-box;
+}
+

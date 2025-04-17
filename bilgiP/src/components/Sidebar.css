@@ -1,0 +1,97 @@
+/* Sidebar.css (veya TopNav.css) */
+
+.top-nav {
+  background-color: #f8f9fa; /* Açık gri arka plan (isteğe bağlı, kontrast için) */
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6; /* Açık gri border (isteğe bağlı, kontrast için) */
+  justify-content: space-between;
+  position: fixed; /* Sabit konumlandırma */
+  top: 0; /* Tarayıcı penceresinin en üstüne yapışır */
+  left: 0; /* Tarayıcı penceresinin en soluna yapışır */
+  width: 100%;
+  z-index: 100; /* Diğer içeriklerin üzerinde görünmesini sağlar */
+}
+
+.top-nav .logo {
+  font-size: 28px; /* Biraz daha büyük logo */
+  font-weight: bold;
+  color: #a78A7F; /* Açık kahve yazı rengi */
+  margin-right: 30px;
+  letter-spacing: 1px; /* Daha okunaklı logo */ 
+}
+
+.top-nav .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .menu li {
+  margin-left: 20px; /* Menü öğeleri arasında daha fazla boşluk */
+}
+
+.top-nav .menu li:first-child {
+  margin-left: 0;
+}
+
+.top-nav .menu li a {
+  text-decoration: none;
+  color: #a78A7F; /* Açık kahve yazı rengi */
+  display: flex;
+  align-items: center;
+  padding: 10px 12px; /* Biraz daha büyük padding */
+  border-radius: 8px; /* Daha yuvarlak köşeler */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-nav .menu li a:hover {
+  background-color: #d3ad97; /* Açık kahve hover arka planı (biraz daha açık ton) */
+  color: #ffffff; /* Beyaz renk hover'da */
+}
+
+.top-nav .menu li a .icon {
+  margin-right: 7px; /* İkon ve yazı arasında biraz daha boşluk */
+  font-size: 1.3em; /* Biraz daha büyük ikonlar */
+  color: #a78A7F; /* Açık kahve ikon rengi */
+}
+
+.top-nav .auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .auth-buttons a.nav-button {
+  background-color: #8C1C13; /* Kırmızı buton rengi */
+  color: white; /* Beyaz buton yazı rengi */
+  padding: 12px 18px; /* Biraz daha büyük buton padding */
+  text-align: center;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(140, 28, 19, 0.4); /* Daha uyumlu gölge */
+  margin-left: 15px; /* Butonlar arasında daha fazla boşluk */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease-in-out;
+  border: 1px solid transparent; /* Kenarlık kaldırıldı, hoverda eklenebilir */
+}
+
+.top-nav .auth-buttons a.nav-button:first-child {
+  margin-left: 25px; /* İlk butonda daha fazla sol boşluk */
+}
+
+.top-nav .auth-buttons a.nav-button:hover {
+  background-color: #6B0F1A; /* Daha koyu kırmızı hover */
+  box-shadow: 0 4px 8px rgba(140, 28, 19, 0.6); /* Daha belirgin hover gölgesi */
+  transform: translateY(-2px); /* Hafif yukarı kayma efekti */
+  border: 1px solid #6B0F1A; /* Hoverda kenarlık eklenebilir */
+}
+
+.top-nav .auth-buttons a.nav-button:active {
+  background-color: #4A0B11; /* Aktif durumda daha koyu kırmızı */
+  box-shadow: 0 1px 3px rgba(140, 28, 19, 0.4);
+  transform: translateY(0);
+}
+
