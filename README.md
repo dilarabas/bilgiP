@@ -18,7 +18,7 @@ bilgiP; farklı kategorilerde testler sunar, zamanlayıcıyla heyecanı artırı
 - 🕒 Son girilen sınav zamanı
 - ✔️ Doğru sayısı
 - 📉 % Başarı oranı
-- 💡 ** Test önerileri**
+- 💡 Test önerileri
 
 ### 👤 Kullanıcı Profili
 -  Profil bilgilerini **düzenleme** seçeneği
