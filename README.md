@@ -36,4 +36,6 @@ bilgiP; farklı kategorilerde testler sunar, zamanlayıcıyla heyecanı artırı
 
 ### 📸 Uygulamadan Görseller
 
-
+![1](bilgiP/screenshots/1.png)
+![2](bilgiP//screenshots/2.png)
+![3](bilgiP//screenshots/3.png)
