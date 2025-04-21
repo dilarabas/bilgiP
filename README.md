@@ -29,10 +29,10 @@ bilgiP; farklı kategorilerde testler sunar, zamanlayıcıyla heyecanı artırı
 
 ### 🛠️ Kullanılan Teknolojiler
 
-- ⚛️ React
-- 🔄 React Router
-- ⏳ Custom Timer Hooks
-- 🎨 CSS / Styled Components 
+-  React
+-  React Router
+-  Custom Timer Hooks
+-  CSS / Styled Components 
 
 ### 📸 Uygulamadan Görseller
 
